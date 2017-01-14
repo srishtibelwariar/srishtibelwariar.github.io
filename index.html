@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Srishti Belwariar</title>
+	<link rel="icon" href="logo.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
+	<link rel="stylesheet" type="text/css"
+		  href="https://fonts.googleapis.com/css?family=Rock+Salt" >
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css?family=Homemade+Apple">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+            $(".work").hover(function(){
+                $(".workmenu").css("visibility", "inherit");
+				
+				$(".workmenu").hover(function(){
+                    $(".workmenu").css("visibility", "inherit");
+                });
+				
+            }, function(){
+                 $(".workmenu").css("visibility","hidden");
+            });
+        });
+        
+		
+		$(document).ready(function(){
+            $(".contacts").hover(function(){
+                $(".contactsmenu").css("visibility", "inherit");
+				
+				$(".contactsmenu").hover(function(){
+                    $(".contactsmenu").css("visibility", "inherit");
+                });
+				
+            }, function(){
+                 $(".contactsmenu").css("visibility","hidden");
+            });
+        });
+       
+	   function codeshow() {
+			document.getElementById('wopt').innerHTML="Academic Projects";
+		}
+		
+		function musicshow() {
+			document.getElementById('wopt').innerHTML="Sitar Music";
+		}
+		
+		function artshow() {
+			document.getElementById('wopt').innerHTML="Art";
+		}
+		
+		function wlabelhide() {
+			document.getElementById('wopt').innerHTML=" ";
+		}
+		
+		
+		function linkedinshow() {
+			document.getElementById('copt').innerHTML="Linked In";
+		}
+		
+		function githubshow() {
+			document.getElementById('copt').innerHTML="Git Hub";
+		}
+		
+		function emailshow() {
+			document.getElementById('copt').innerHTML="Email";
+		}
+		
+		function clabelhide() {
+			document.getElementById('copt').innerHTML=" ";
+		}
+		
+	   $(document).ready(function(){
+			$("a").click(function(){
+				if(this.hash!==""){
+				event.preventDefault();
+				$('html, body').animate({
+				  scrollTop: $(this.hash).offset().top-100
+				}, 1000, function(){
+				  window.location.hash = this.hash;
+				});
+			  };
+			});
+		  });
+	   
+	  
+	</script>
+	
+	<style>
+		/* #BCCF02 #5BB12F #9B539C #EB6540 #73C5E1*/
+		/* #EFEFEF #CCCCCC #F79B2E #E1358D #F87AB8*/
+		
+		
+		html {
+			height: 100%;
+			margin: 0;
+			}
+			
+		body{   
+            /*background-color: #F3BD3B;*/
+			height: 100%;
+			margin: 0;
+			padding: 0px;
+			color: black;
+			font-family: 'Julius Sans One', san-serif;
+			box-sizing: border-box;
+		}
+		
+		div.navhost {
+			width: 100%;
+			background-color: white ;
+			position: fixed;
+			top: 0px;
+			height: 80px;
+			margin: 0;
+			padding: 0px;
+			font-size: 17px;
+			
+		
+		}
+		
+		h2.sitename{
+			padding: 10px;
+			margin: 10px;
+		}
+		
+		h4.siteopt{
+			padding: 10px;
+			margin: 10px;
+		}
+		
+		
+		td.popup{
+			visibility: hidden;
+		}
+		
+		a:link {
+			color: rgb(90, 1, 147);
+			/*  */
+		}
+		
+		a:hover {
+			color: rgb(153, 0, 153);
+			
+		}
+		
+		div.header {
+			background-color: #EFEFEF;
+			color: rgb(90, 1, 147);
+			width:100%;
+			height: 100%;
+			background-size: 100% 900px;
+			background-image: url("bann.gif");
+			background-position: center top;
+			background-repeat: no-repeat;
+			position: inherit;
+			display: flex;
+			
+			
+		}
+		
+		div.cont{
+			margin: 100px;
+		}
+		
+		hr {
+			background-color: #5BB12F;
+			width: 35%;
+			height: 5px;
+			
+		}
+		
+	</style>
+</head>
+
+<body>
+	<!-- background-color: #F5BA42 F3BD3B  -->
+	<!-- style="border: dashed; border-color:black;" -->
+	<!-- onmouseenter="workmenuin()" onmouseleave="workmenuout()" onmouseleave="hidework()" onmouseenter="workin()" onmouseleave="workout()" -->
+	
+	<div class="navhost">
+		<table width="100%" style="position: fixed; z-index: 15.0;">
+			<tr>
+				<td valign="top" colspan="3" rowspan="3" width="60%"><h2 class="sitename" >SRISHTI BELWARIAR</h2></td>
+				<td class="work" align="center" width="20%">
+					<h2 class="siteopt">Work</h2>
+					<div class="workmenu" id="workmenu" style="visibility: hidden; height: 110px; border-radius: 0px 0px 110px 110px; background-color: white;">
+						<i class="fa fa-paint-brush fa-2x" aria-hidden="true" onmouseover="artshow()" onmouseout="wlabelhide()" style="position: absolute; right: 24%;"></i>
+						<a href="#sitar"><i class="fa fa-music fa-2x" aria-hidden="true" onmouseover="musicshow()" onmouseout="wlabelhide()" style="position: absolute; right: 29%;"></i></a>
+						<i class="fa fa-code fa-2x" aria-hidden="true" onmouseover="codeshow()" onmouseout="wlabelhide()"style="position: absolute; right: 33%;"></i>
+						<br /><br />
+						<h5 id="wopt" align="center">  </h5>
+					</div>
+				</td>
+				<td class="contacts" align="center" width="20%">
+					<h2 class="siteopt">Contact</h2>
+					<div class="contactsmenu" id="contactsmenu" style="visibility: hidden; height: 110px; border-radius: 0px 0px 110px 110px; background-color: white;">
+						<a href="https://www.linkedin.com/in/srishtibelwariar"><i class="fa fa-linkedin fa-2x" aria-hidden="true" onmouseover="linkedinshow()" onmouseout="clabelhide()" style="position: absolute; right: 13%;"></i></a>
+						<a href="https://github.com/srishtibelwariar"><i class="fa fa-github-alt fa-2x" aria-hidden="true" onmouseover="githubshow()" onmouseout="clabelhide()" style="position: absolute; right: 8.5%;"></i></a>
+						<a href="mailto:sb2355@cornell.edu"><i class="fa fa-envelope fa-2x" aria-hidden="true" onmouseover="emailshow()" onmouseout="clabelhide()" style="position: absolute; right: 4%;"></i></a>
+						<br /><br />
+						<h5 id="copt" align="center">  </h5>
+					</div>
+				</td>
+			</tr>
+			
+		</table>
+	</div>
+
+
+	<div class="header" align="middle">
+		<div style=" width: 100%; margin-left: auto; margin-right: auto; align-self: center;">
+			<br /><br />
+			<h3 style="padding: 0px; margin:0; font-family: 'Homemade Apple', cursive; font-size: 70px; ">Srishti Belwariar</h2>
+			<h4 style="padding: 0px; margin:0; font-size: 25px; ">With Passion comes Purpose</h4>
+			<a href="#about"><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
+		</div>
+		
+		<!--<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i>-->
+		
+		
+		<!--
+		<div style=" border: dashed;width: 100%; margin-left: auto; margin-right: auto; display: flex; align-self: flex-end;">
+		<i class="fa fa-arrow-circle-o-down fa-4x" aria-hidden="true"></i>
+		</div>-->
+		
+		
+	</div>
+		<br />
+		<hr / id="about">
+	<div class="cont">
+		<h2 style="padding: 0px; margin:0; ">
+			With Passion comes Purpose
+		</h3>
+		
+		<h3 style="padding: 0px; margin:0; font-size: 17px; ">
+			Hi there! My name is Srishti and I'm a freshman at Cornell University (College of Engineering).
+			When it comes to all things tech, from web design and development to tinkering with programming languages and software,
+			<br />	<br />
+			Aside from my engineering background, I spend my time engaging in the arts.
+			I have been playing Sitar for 5 years with certifications.  I learn and innovate with my music, which is such an integral part of my identity.  I also sculpt.
+		</h3>
+		
+		<h3 style="padding: 0px; margin:0; font-size: 20px; ">
+			Please excuse the appearence of this website as its still being updated with new content.  Thank you.
+		</h3>
+	</div>
+	
+	<br />
+	<hr / id="sitar">
+		
+	<div class="cont">
+		<h2>Sitar Music</h2>
+		
+		<h4>I have been learning to play sitar for the past 5 years and have completed 2 certifications
+		from Ahkil Bharitya Gandharva Mahavidyalaya.  This list of videos is being updated with new videos.</h4>
+		<!--<table width="100%">
+			<tr align="middle">
+				<td>
+					<iframe width="560px" height= "360px" src="https://www.youtube.com/embed/WvgiUDZOV-0" frameborder="0" allowfullscreen></iframe>
+				</td>
+				
+				<td>
+					<iframe width="560px" height= "360px" src="https://www.youtube.com/embed/WvgiUDZOV-0" frameborder="0" allowfullscreen></iframe>
+				</td>
+			</tr>
+		</table>-->
+	
+	</div>
+	
+		<br />
+		<hr />
+	
+	<div class="cont">
+		<h2>Projects</h2>
+		
+	</div>
+	
+	
+</body>
+</html>
