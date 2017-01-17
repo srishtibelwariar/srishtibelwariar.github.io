@@ -1,5 +1,5 @@
 		function codeshow() {
-			document.getElementById('wopt').innerHTML="Academic Projects";
+			document.getElementById('wopt').innerHTML="Projects";
 		}
 		
 		function musicshow() {
