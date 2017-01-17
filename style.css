@@ -1,0 +1,83 @@
+/* #BCCF02 #5BB12F #9B539C #EB6540 #73C5E1*/
+		/* #EFEFEF #CCCCCC #F79B2E #E1358D #F87AB8*/
+		
+		
+		html {
+			height: 100%;
+			margin: 0;
+			}
+			
+		body{   
+            /*background-color: #F3BD3B;*/
+			height: 100%;
+			margin: 0;
+			padding: 0px;
+			color: black;
+			font-family: 'Julius Sans One', san-serif;
+			box-sizing: border-box;
+		}
+		
+		div.navhost {
+			width: 100%;
+			background-color: white ;
+			position: fixed;
+			top: 0px;
+			height: 80px;
+			margin: 0;
+			padding: 0px;
+			font-size: 17px;
+			
+		
+		}
+		
+		h2.sitename{
+			padding: 10px;
+			margin: 10px;
+		}
+		
+		h4.siteopt{
+			padding: 10px;
+			margin: 10px;
+		}
+		
+		
+		td.popup{
+			visibility: hidden;
+		}
+		
+		a:link {
+			color: rgb(90, 1, 147);
+			/*  */
+		}
+		
+		a:hover {
+			color: rgb(153, 0, 153);
+			
+		}
+		
+		div.header {
+			background-color: #EFEFEF;
+			color: rgb(90, 1, 147);
+			width:100%;
+			height: 100%;
+			background-size: 100% 900px;
+			background-image: url("bann.gif");
+			background-position: center top;
+			background-repeat: no-repeat;
+			position: inherit;
+			display: flex;
+			
+			
+		}
+		
+		div.cont{
+			margin: 100px;
+		}
+		
+		hr {
+			background-color: #5BB12F;
+			width: 35%;
+			height: 5px;
+			
+		}
+		
