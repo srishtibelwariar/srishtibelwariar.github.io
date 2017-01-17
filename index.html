@@ -3,6 +3,11 @@
 <html>
 <head>
     <title>Srishti Belwariar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Srishti, Belwariar">
+	<meta name="description" content="Srishti Belwariar's Personal Website">
+	
+	<!-- Style sheets -->
 	<link rel="icon" href="logo.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
@@ -11,177 +16,17 @@
 	<link rel="stylesheet" type="text/css"
 		href="https://fonts.googleapis.com/css?family=Homemade+Apple">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
 	
+	<!-- Scripts -->
+	<script src="script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="jquery.js"></script>
 	
-	<script>
-		$(document).ready(function(){
-            $(".work").hover(function(){
-                $(".workmenu").css("visibility", "inherit");
-				
-				$(".workmenu").hover(function(){
-                    $(".workmenu").css("visibility", "inherit");
-                });
-				
-            }, function(){
-                 $(".workmenu").css("visibility","hidden");
-            });
-        });
-        
-		
-		$(document).ready(function(){
-            $(".contacts").hover(function(){
-                $(".contactsmenu").css("visibility", "inherit");
-				
-				$(".contactsmenu").hover(function(){
-                    $(".contactsmenu").css("visibility", "inherit");
-                });
-				
-            }, function(){
-                 $(".contactsmenu").css("visibility","hidden");
-            });
-        });
-       
-	   function codeshow() {
-			document.getElementById('wopt').innerHTML="Academic Projects";
-		}
-		
-		function musicshow() {
-			document.getElementById('wopt').innerHTML="Sitar Music";
-		}
-		
-		function artshow() {
-			document.getElementById('wopt').innerHTML="Art";
-		}
-		
-		function wlabelhide() {
-			document.getElementById('wopt').innerHTML=" ";
-		}
-		
-		
-		function linkedinshow() {
-			document.getElementById('copt').innerHTML="Linked In";
-		}
-		
-		function githubshow() {
-			document.getElementById('copt').innerHTML="Git Hub";
-		}
-		
-		function emailshow() {
-			document.getElementById('copt').innerHTML="Email";
-		}
-		
-		function clabelhide() {
-			document.getElementById('copt').innerHTML=" ";
-		}
-		
-	   $(document).ready(function(){
-			$("a").click(function(){
-				if(this.hash!==""){
-				event.preventDefault();
-				$('html, body').animate({
-				  scrollTop: $(this.hash).offset().top-100
-				}, 1000, function(){
-				  window.location.hash = this.hash;
-				});
-			  };
-			});
-		  });
-	   
-	  
-	</script>
-	
-	<style>
-		/* #BCCF02 #5BB12F #9B539C #EB6540 #73C5E1*/
-		/* #EFEFEF #CCCCCC #F79B2E #E1358D #F87AB8*/
-		
-		
-		html {
-			height: 100%;
-			margin: 0;
-			}
-			
-		body{   
-            /*background-color: #F3BD3B;*/
-			height: 100%;
-			margin: 0;
-			padding: 0px;
-			color: black;
-			font-family: 'Julius Sans One', san-serif;
-			box-sizing: border-box;
-		}
-		
-		div.navhost {
-			width: 100%;
-			background-color: white ;
-			position: fixed;
-			top: 0px;
-			height: 80px;
-			margin: 0;
-			padding: 0px;
-			font-size: 17px;
-			
-		
-		}
-		
-		h2.sitename{
-			padding: 10px;
-			margin: 10px;
-		}
-		
-		h4.siteopt{
-			padding: 10px;
-			margin: 10px;
-		}
-		
-		
-		td.popup{
-			visibility: hidden;
-		}
-		
-		a:link {
-			color: rgb(90, 1, 147);
-			/*  */
-		}
-		
-		a:hover {
-			color: rgb(153, 0, 153);
-			
-		}
-		
-		div.header {
-			background-color: #EFEFEF;
-			color: rgb(90, 1, 147);
-			width:100%;
-			height: 100%;
-			background-size: 100% 900px;
-			background-image: url("bann.gif");
-			background-position: center top;
-			background-repeat: no-repeat;
-			position: inherit;
-			display: flex;
-			
-			
-		}
-		
-		div.cont{
-			margin: 100px;
-		}
-		
-		hr {
-			background-color: #5BB12F;
-			width: 35%;
-			height: 5px;
-			
-		}
-		
-	</style>
 </head>
 
 <body>
-	<!-- background-color: #F5BA42 F3BD3B  -->
-	<!-- style="border: dashed; border-color:black;" -->
-	<!-- onmouseenter="workmenuin()" onmouseleave="workmenuout()" onmouseleave="hidework()" onmouseenter="workin()" onmouseleave="workout()" -->
+	
 	
 	<div class="navhost">
 		<table width="100%" style="position: fixed; z-index: 15.0;">
@@ -217,7 +62,7 @@
 		<div style=" width: 100%; margin-left: auto; margin-right: auto; align-self: center;">
 			<br /><br />
 			<h3 style="padding: 0px; margin:0; font-family: 'Homemade Apple', cursive; font-size: 70px; ">Srishti Belwariar</h2>
-			<h4 style="padding: 0px; margin:0; font-size: 25px; ">With Passion Comes Purpose</h4>
+			<h4 style="padding: 0px; margin:0; font-size: 25px; ">With Passion comes Purpose</h4>
 			<a href="#about"><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
 		</div>
 		
@@ -239,17 +84,23 @@
 		</h3>
 		
 		<h3 style="padding: 0px; margin:0; font-size: 17px; ">
-			Hi there! My name is Srishti and I'm a freshman at Cornell University (College of Engineering).
-			When it comes to all things tech, from web design and development to tinkering with programming languages and software,
-			I'm always looking for a new project to get behind of and work on.  I strive for learning through the process rather than
-			quickly reaching the end result, which allows me to explore many areas of tech with an open mind.  Aside from technology, I am also
-			passionate about my work in fine arts. I have been playing the Sitar, an Indian classical instrument for over 5 years and have received
-			certifications that count towards a university degree.  I live by the idea that passion and dedication provides one purpose 
-			and direction.  My passion and dedication to learning and exploring numerous areas in technology and the arts builds my purpose.
-			Thank you for visiting my website and please do check out some of my works and projects.
+			Hi there! My name is Srishti and I'm a freshman at Cornell University
+			(College of Engineering). When it comes to all things tech, from web
+			design and development to tinkering with programming languages and
+			software, I'm always looking for a new project to get behind of and
+			work on. I strive for learning through the process rather than quickly
+			reaching the end result, which allows me to explore many areas of tech
+			with an open mind. Aside from technology, I am also passionate about my
+			work in fine arts. I have been playing the Sitar, an Indian classical
+			instrument for over 5 years and have received certifications that count
+			towards a university degree. I live by the idea that passion and
+			dedication provides one purpose and direction. My passion and
+			dedication to learning and exploring numerous areas in technology
+			and the arts builds my purpose. Thank you for visiting my website
+			and please do check out some of my works and projects.
 		</h3>
-		<br />	<br />	<br />
-		<h3 style="padding: 0px; margin:0; font-size: 25px; ">
+		
+		<h3 style="padding: 0px; margin:0; font-size: 20px; ">
 			Please excuse the appearence of this website as its still being updated with new content.  Thank you.
 		</h3>
 	</div>
