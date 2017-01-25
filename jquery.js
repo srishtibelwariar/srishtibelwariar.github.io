@@ -27,10 +27,10 @@
         });
 		
 	$(document).ready(function(){
-		$("a").click(function(){
+		$(".soft").click(function(){
 			if(this.hash!==""){
 				event.preventDefault();
-				$('html, body').animate({
+				$('body').animate({
 				  scrollTop: $(this.hash).offset().top-100
 				}, 1000, function(){
 				  window.location.hash = this.hash;
