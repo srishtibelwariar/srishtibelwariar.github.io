@@ -1,6 +1,0 @@
-Theme colors
-orange: rgb(243,191,145)
-purple: rgb(211,163,217)
-green: rgb(168,205,155)
-blue: rgb(168,206,229)
-white: rgb(255,255,255)
