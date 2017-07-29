@@ -1,0 +1,465 @@
+/* #BCCF02 #5BB12F #9B539C #EB6540 #73C5E1*/
+		/* #EFEFEF #CCCCCC #F79B2E #E1358D #F87AB8*/
+		
+		
+		html {
+			height: 100%;
+			margin: 0;
+			}
+			
+		body{   
+            /*background-color: #F3BD3B;*/
+			height: 100%;
+			margin: 0;
+			padding: 0px;
+			color: black;
+			font-family: 'Julius Sans One', san-serif;
+			box-sizing: border-box;
+		}
+		
+		div.navhost {
+			width: 100%;
+			background-color: white ;
+			position: fixed;
+			top: 0px;
+			height: 80px;
+			margin: 0;
+			padding: 0px;
+			font-size: 17px;
+			z-index: 10;
+		
+		}
+		
+		h2.sitename{
+			padding: 10px;
+			margin: 10px;
+		}
+		
+		h4.siteopt{
+			padding: 10px;
+			margin: 10px;
+		}
+		
+		
+		td.popup{
+			visibility: hidden;
+		}
+		
+		a:link {
+			color: rgb(90, 1, 147);
+			/*  */
+		}
+		
+		a:hover {
+			color: rgb(153, 0, 153);
+			
+		}
+		
+		div.header {
+			background-color: #EFEFEF;
+			color: rgb(90, 1, 147);
+			width:100%;
+			height: 100%;
+			background-size: 100% 900px;
+			background-image: url("bann.gif");
+			background-position: center top;
+			background-repeat: no-repeat;
+			position: inherit;
+			display: flex;
+			
+			
+		}
+		
+		div.cont{
+			margin: 100px;
+			
+		}
+		
+		hr {
+			background-color: #5BB12F;
+			width: 35%;
+			height: 5px;
+		}
+		
+		div.projinfo1 {
+			visibility: visible;
+			background: white;
+			height: 300px;
+			border-radius: 0px 0px 50% 50%;
+			position: absolute;
+			z-index: 1;
+			-webkit-transition-property: height;
+			-webkit-transition-duration: 0.5s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			transition-property: height;
+			transition-duration: 0.5s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+		}
+		
+		
+		p.projpara1 {
+			margin:20px;
+			padding: 10px;
+			text-align: center;
+			visibility: visible;
+			opacity:1;
+			-webkit-transition-property: opacity;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+			transition-property: opacity;
+			transition-duration: 0.3s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+		}
+		
+		div.repobut1{
+			visibility: visible;
+			z-index: 0.5;
+			height: 50px;
+			width: 150px;
+			background: rgb(243,191,145);
+			text-align: center;
+			padding: 0px;
+			margin: 0 -20%;
+			top: 50%;
+			border: 5px solid white;
+			display: inline-block;
+			position: absolute;
+			transform: scale(0.00);
+			-webkit-transition-property: transform;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: linear;
+			transition-property: transform;
+			transition-duration: 0.3s;
+			transition-timing-function: linear;
+		}
+		
+		div.projinfo2 {
+			visibility: visible;
+			background: white;
+			height: 300px;
+			border-radius: 0px 0px 50% 50%;
+			position: absolute;
+			z-index: 1;
+			-webkit-transition-property: height;
+			-webkit-transition-duration: 0.5s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			transition-property: height;
+			transition-duration: 0.5s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+		}
+		
+		
+		p.projpara2 {
+			margin:20px;
+			padding: 10px;
+			text-align: center;
+			visibility: visible;
+			opacity:1;
+			-webkit-transition-property: opacity;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+			transition-property: opacity;
+			transition-duration: 0.3s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+		}
+		
+		div.repobut2{
+			visibility: visible;
+			z-index: 0.5;
+			height: 50px;
+			width: 150px;
+			background: rgb(243,191,145);
+			text-align: center;
+			padding: 0px;
+			margin: 0 -20%;
+			top: 50%;
+			border: 5px solid white;
+			display: inline-block;
+			position: absolute;
+			transform: scale(0.00);
+			-webkit-transition-property: transform;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: linear;
+			transition-property: transform;
+			transition-duration: 0.3s;
+			transition-timing-function: linear;
+		}
+		
+		div.projinfo3 {
+			visibility: visible;
+			background: white;
+			height: 300px;
+			border-radius: 0px 0px 50% 50%;
+			position: absolute;
+			z-index: 1;
+			-webkit-transition-property: height;
+			-webkit-transition-duration: 0.5s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			transition-property: height;
+			transition-duration: 0.5s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+		}
+		
+		
+		p.projpara3 {
+			margin:20px;
+			padding: 10px;
+			text-align: center;
+			visibility: visible;
+			opacity:1;
+			-webkit-transition-property: opacity;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+			transition-property: opacity;
+			transition-duration: 0.3s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+		}
+		
+		div.repobut3{
+			visibility: visible;
+			z-index: 0.5;
+			height: 50px;
+			width: 150px;
+			background: rgb(243,191,145);
+			text-align: center;
+			padding: 0px;
+			margin: 0 -20%;
+			top: 50%;
+			border: 5px solid white;
+			display: inline-block;
+			position: absolute;
+			transform: scale(0.00);
+			-webkit-transition-property: transform;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: linear;
+			transition-property: transform;
+			transition-duration: 0.3s;
+			transition-timing-function: linear;
+		}
+		
+		div.projinfo4 {
+			visibility: visible;
+			background: white;
+			height: 300px;
+			border-radius: 0px 0px 50% 50%;
+			position: absolute;
+			z-index: 1;
+			-webkit-transition-property: height;
+			-webkit-transition-duration: 0.5s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			transition-property: height;
+			transition-duration: 0.5s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+		}
+		
+		
+		p.projpara4 {
+			margin:20px;
+			padding: 10px;
+			text-align: center;
+			visibility: visible;
+			opacity:1;
+			-webkit-transition-property: opacity;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+			transition-property: opacity;
+			transition-duration: 0.3s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+		}
+		
+		div.repobut4{
+			visibility: visible;
+			z-index: 0.5;
+			height: 50px;
+			width: 150px;
+			background: rgb(243,191,145);
+			text-align: center;
+			padding: 0px;
+			margin: 0 -20%;
+			top: 50%;
+			border: 5px solid white;
+			display: inline-block;
+			position: absolute;
+			transform: scale(0.00);
+			-webkit-transition-property: transform;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: linear;
+			transition-property: transform;
+			transition-duration: 0.3s;
+			transition-timing-function: linear;
+		}
+		
+		
+		div.projinfo5 {
+			visibility: visible;
+			background: white;
+			height: 300px;
+			border-radius: 0px 0px 50% 50%;
+			position: absolute;
+			z-index: 1;
+			-webkit-transition-property: height;
+			-webkit-transition-duration: 0.5s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			transition-property: height;
+			transition-duration: 0.5s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+		}
+		
+		
+		p.projpara5 {
+			margin:20px;
+			padding: 10px;
+			text-align: center;
+			visibility: visible;
+			opacity:1;
+			-webkit-transition-property: opacity;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+			transition-property: opacity;
+			transition-duration: 0.3s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+		}
+		
+		div.repobut5{
+			visibility: visible;
+			z-index: 0.5;
+			height: 50px;
+			width: 150px;
+			background: rgb(243,191,145);
+			text-align: center;
+			padding: 0px;
+			margin: 0 -20%;
+			top: 50%;
+			border: 5px solid white;
+			display: inline-block;
+			position: absolute;
+			transform: scale(0.00);
+			-webkit-transition-property: transform;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: linear;
+			transition-property: transform;
+			transition-duration: 0.3s;
+			transition-timing-function: linear;
+		}
+		
+		
+		div.projinfo6 {
+			visibility: visible;
+			background: white;
+			height: 300px;
+			border-radius: 0px 0px 50% 50%;
+			position: absolute;
+			z-index: 1;
+			-webkit-transition-property: height;
+			-webkit-transition-duration: 0.5s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			transition-property: height;
+			transition-duration: 0.5s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+		}
+		
+		
+		p.projpara6 {
+			margin:20px;
+			padding: 10px;
+			text-align: center;
+			visibility: visible;
+			opacity:1;
+			-webkit-transition-property: opacity;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+			transition-property: opacity;
+			transition-duration: 0.3s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+		}
+		
+		div.repobut6{
+			visibility: visible;
+			z-index: 0.5;
+			height: 50px;
+			width: 150px;
+			background: rgb(243,191,145);
+			text-align: center;
+			padding: 0px;
+			margin: 0 -20%;
+			top: 50%;
+			border: 5px solid white;
+			display: inline-block;
+			position: absolute;
+			transform: scale(0.00);
+			-webkit-transition-property: transform;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: linear;
+			transition-property: transform;
+			transition-duration: 0.3s;
+			transition-timing-function: linear;
+		}
+		
+		
+		div.projinfo7 {
+			visibility: visible;
+			background: white;
+			height: 300px;
+			border-radius: 0px 0px 50% 50%;
+			position: absolute;
+			z-index: 1;
+			-webkit-transition-property: height;
+			-webkit-transition-duration: 0.5s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			transition-property: height;
+			transition-duration: 0.5s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+		}
+		
+		
+		p.projpara7 {
+			margin:20px;
+			padding: 10px;
+			text-align: center;
+			visibility: visible;
+			opacity:1;
+			-webkit-transition-property: opacity;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+			transition-property: opacity;
+			transition-duration: 0.3s;
+			transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+			
+		}
+		
+		div.repobut7{
+			visibility: visible;
+			z-index: 0.5;
+			height: 50px;
+			width: 150px;
+			background: rgb(243,191,145);
+			text-align: center;
+			padding: 0px;
+			margin: 0 -20%;
+			top: 50%;
+			border: 5px solid white;
+			display: inline-block;
+			position: absolute;
+			transform: scale(0.00);
+			-webkit-transition-property: transform;
+			-webkit-transition-duration: 0.3s;
+			-webkit-transition-timing-function: linear;
+			transition-property: transform;
+			transition-duration: 0.3s;
+			transition-timing-function: linear;
+		}
+		
+		
