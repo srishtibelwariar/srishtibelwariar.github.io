@@ -55,6 +55,18 @@
 			
 		}
 		
+		a.footnav:link {
+			color: white;
+		}
+		
+		a.footnav:hover {
+			color: white;
+			
+		}
+		a.footnav:visited {
+			color:white;
+		}
+		
 		div.header {
 			background-color: #EFEFEF;
 			color: rgb(90, 1, 147);
