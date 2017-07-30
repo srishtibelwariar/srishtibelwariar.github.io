@@ -40,6 +40,19 @@
 			});
 		  });
         
+        //page scroll for footer links
+	$(document).ready(function(){
+		$(".footnav").click(function(){
+			if(this.hash!==""){
+				event.preventDefault();
+				$('body').animate({
+				  scrollTop: $(this.hash).offset().top-100
+				}, 1000, function(){
+				  window.location.hash = this.hash;
+				});
+			  }
+			});
+		  });
         //project 1
         $(document).ready(function(){
                 $(".projbox1").hover(function(){
