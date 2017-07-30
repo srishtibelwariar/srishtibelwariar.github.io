@@ -3,7 +3,7 @@
 		}
 		
 		function musicshow() {
-			document.getElementById('wopt').innerHTML="Sitar Music";
+			document.getElementById('wopt').innerHTML="Music and the Arts";
 		}
 		
 		function orgshow() {
