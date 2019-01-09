@@ -1,15 +1,292 @@
+:root {
+
+/*Honeycomb Attributes*/
+--hexa-dim: 400px;
+--hexa-spacing: 0px;
+--hover-time: 0.3s;
+--hover-factor: 1.2;
+
+/*Color Scheme*/
+	--color-0: #000000;
+  --color-1: #430D23;
+	--color-2: #F3CDAF;
+	--color-3: #DA9602;
+	--color-4: #CD7111;
+	--color-5: #7C2D4C;
+
+	--color-11: #CFA5A1;
+	--color-12: #B96A3A;
+	--color-13: #782F4E;
+	--color-14: #461026;
+	--color-15: #DA9502;
+
+	--color-year: #FF6F61;
+	--color-year-1: #9D446E;
+}
+
 html {
-		padding: 5%;
+	padding: 5%;
 }
 
 .page_container  {
-		border: red 6px solid;
+		font-family: 'Raleway', sans-serif;
 }
 
-.header_container {
-		border: black 2px solid;
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	color: var(--color-year-1);
+	font-size: 40px;
+}
+p {
+	font-family: 'Khula', sans-serif;
+	color: var(--color-0);
+	font-size: 20px;
 }
 
-.highlights_container{
+.honeycomb {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
 
+.honeycomb_list {
+	list-style: none;
+	display: inline-block;
+	align-content: center;
+}
+
+.honeycomb_list li {
+	float: left
+}
+
+.honeycomb_unit {
+	border: var(--color-year) 0.5px solid;
+	width: var(--hexa-dim);
+	height: var(--hexa-dim);
+	display: flex;
+  justify-content:center;
+}
+
+.honeycomb_u1 {
+		background-color: var(--color-11);
+		width: calc(var(--hexa-dim)/1.5);
+		height: calc(var(--hexa-dim)*1);
+		-webkit-transform: rotate(-60deg); /*-30*/
+	      -ms-transform: rotate(-60deg);
+	          transform: rotate(-60deg);
+		position: absolute;
+		z-index: 100;
+		overflow:hidden;
+		visibility: hidden;
+
+		/* -webkit-transition: width var(--) ease-out, height var(--hover-height-time) ease-out;
+		-moz-transition: width var(--hover-width-time) ease-out, height var(--hover-height-time) ease-out;
+		-o-transition: width var(--hover-width-time) ease-out, height var(--hover-height-time) ease-out;
+		transition: width var(--hover-width-time) ease-out, height var(--hover-height-time) ease-out; */
+
+	/* -webkit-transition: transform var(--hover-width-time) ease-out;
+	-moz-transition: transform var(--hover-width-time) ease-out;
+	-o-transition: transform var(--hover-width-time) ease-out;
+	transition: transform var(--hover-width-time) ease-out; */
+
+-webkit-transition: all var(--hover-time) cubic-bezier(0.175, 0.985, 0.32, 2.275);
+-moz-transition: all var(--hover-time) cubic-bezier(0.175, 0.985, 0.32, 2.275);
+-o-transition: all var(--hover-time) cubic-bezier(0.175, 0.985, 0.32, 2.275);
+transition: all var(--hover-time) cubic-bezier(0.175, 0.985, 0.32, 2.275);
+}
+
+.honeycomb_u1:hover  {
+		/* width: calc(var(--hexa-dim)/1.5* var(--hover-factor));
+		height: calc(var(--hexa-dim)* var(--hover-factor)); */
+		transform:scale(var(--hover-factor), var(--hover-factor)) rotate(-60deg);
+}
+
+.honeycomb_u2 {
+		background-color: var(--color-5);
+		width: calc(var(--hexa-dim)/1.5);
+		height: calc(var(--hexa-dim)*1);
+		-webkit-transform: rotate(60deg);
+	      -ms-transform: rotate(60deg);
+	          transform: rotate(60deg);
+		position: absolute;
+		z-index: 101;
+		overflow:hidden;
+		visibility: hidden;
+
+		/* -webkit-transition: width var(--hover-width-time) ease-out, height var(--hover-height-time) ease-out;
+		-moz-transition: width var(--hover-width-time) ease-out, height var(--hover-height-time) ease-out;
+		-o-transition: width var(--hover-width-time) ease-out, height var(--hover-height-time) ease-out;
+		transition: width var(--hover-width-time) ease-out, height var(--hover-height-time) ease-out; */
+
+	/* -webkit-transition: scale var(--hover-width-time) ease-out;
+	-moz-transition: sc var(--hover-width-time) ease-out;
+	-o-transition: transform var(--hover-width-time) ease-out;
+	transition: transform var(--hover-width-time) ease-out; */
+}
+
+.honeycomb_u2:hover  {
+		/* width: calc(var(--hexa-dim)/1.5* var(--hover-factor));
+		height: calc(var(--hexa-dim)* var(--hover-factor)); */
+		transform:scale(1.0,1.0) rotate(60deg);
+}
+
+.honeycomb_u3 {
+		background-color: var(--color-3);
+		width: calc(var(--hexa-dim)/1.5);
+		height: calc(var(--hexa-dim)*1);
+		-webkit-transform: rotate(60deg);
+	      -ms-transform: rotate(60deg);
+	          transform: rotate(60deg);
+		position: absolute;
+		z-index: 99;
+		visibility: visible;
+		/* -webkit-transition: width var(--hover-width-time) ease-out, height var(--hover-height-time) ease-out;
+		-moz-transition: width var(--hover-width-time) ease-out, height var(--hover-height-time) ease-out;
+		-o-transition: width var(--hover-width-time) ease-out, height var(--hover-height-time) ease-out;
+		transition: width var(--hover-width-time) ease-out, height var(--hover-height-time) ease-out; */
+		cursor: pointer;
+}
+
+.honeycomb_u3:hover  {
+		/* width: calc(var(--hexa-dim)/1.5* var(--hover-factor));
+		height: calc(var(--hexa-dim)* var(--hover-factor)); */
+		transform:scale(1.0,1.0) rotate(60deg);
+}
+
+.honeycomb_u3 img {
+		width: var(--hexa-dim);
+		height: var(--hexa-dim);
+			-webkit-transform: rotate(-60deg);
+		      -ms-transform: rotate(-60deg);
+		          transform: rotate(-60deg);
+		cursor: pointer;
+		left: -50px;
+		position: relative;
+
+}
+
+/* Honeycomb Content */
+.honeycomb_unit .honeycomb_content {
+	width: var(--hexa-dim);
+	height: var(--hexa-dim);
+	overflow: hidden;
+	background-color: var(--color-year);
+			-webkit-transform: rotate(30deg);
+		      -ms-transform: rotate(30deg);
+		          transform: rotate(30deg);
+  /* -webkit-animation: mymove 5s infinite; */
+  /* animation: mymove 5s infinite; */
+  position: relative;
+}
+
+@-webkit-keyframes mymove {
+  0%   {top: 0px; left: 0px; background: red;}
+  25%  {top: 0px; left: 100px; background: blue;}
+  50%  {top: 100px; left: 100px; background: yellow;}
+  75%  {top: 100px; left: 0px; background: green;}
+  100% {top: 0px; left: 0px; background: red;}
+}
+
+@keyframes mymove {
+  0%   {top: 0px; left: 0px; background: red;}
+  25%  {top: 0px; left: 100px; background: blue;}
+  50%  {top: 100px; left: 100px; background: yellow;}
+  75%  {top: 100px; left: 0px; background: green;}
+  100% {top: 0px; left: 0px; background: red;}
+}
+
+.tester {
+background-color: var(--color-12);
+width: 200px;
+height: 200px;
+
+}
+.orba{
+border: black 0.5px solid;
+background-color: white;
+width: 99px;
+height: 100px;
+border-radius: 50%;
+float: left;
+position: relative;
+top:-50px;
+  -webkit-animation: orbamove 1s linear infinite;
+  animation: orbamove 1s linear infinite;
+}
+
+.orbb{
+background-color: var(--color-12);
+width: 99px;
+height: 100px;
+border-radius: 50%;
+float: left;
+top: -50px;
+position: relative;
+-webkit-animation: orbbmove 1s linear infinite;
+animation: orbbmove 1s linear infinite;
+border: black 0.5px solid;
+}
+
+
+/* @-webkit-keyframes orbamove {
+  0%   {height: 50px;}
+	10%  {height: 80px;}
+  20%  {height: 60px;}
+	30%  {height: 50px;}
+	40%  {height: 60px;}
+  50%  {height: 70px;}
+	60%  {height: 60px;}
+	70%  {height: 50px;}
+	80%  {height: 50px;}
+	90%  {height: 50px;}
+  100% {height: 50px;}
+} */
+
+@-webkit-keyframes orbamove {
+  0%   {top: -50px;}
+	10%   {top: -50px;}
+  20%   {top: -50px;}
+	30%   {top: -50px;}
+	40%   {top: -50px;}
+  50%   {top: -50px;}
+	60%   {top: -50px;}
+	70%   {top: -50px;}
+	80%   {top: -50px;}
+	90%   {top: -50px;}
+  100%   {top: -50px;}
+}
+
+@-webkit-keyframes orbamove {
+  0%   {top: -50px;}
+	10%   {top: -50px;}
+  20%   {top: -50px;}
+	30%   {top: -50px;}
+	40%   {top: -50px;}
+  50%   {top: -50px;}
+	60%   {top: -50px;}
+	70%   {top: -50px;}
+	80%   {top: -50px;}
+	90%   {top: -50px;}
+  100%   {top: -50px;}
+}
+
+
+/* Responsiveness */
+@media (min-width: 1201px) {
+	.honeycomb_list li:nth-child(5n-1) {
+		position: relative;
+		top: calc(var(--hexa-dim)*-0.25);
+		right: calc(var(--hexa-dim)*-0.5);
+	}
+	.honeycomb_list li:nth-child(5n) {
+		position: relative;
+		top: calc(var(--hexa-dim)*-0.25);
+		right: calc(var(--hexa-dim)*-0.5);
+	}
+	.honeycomb_list li:nth-child(5n-1) .honeycomb_u3 {
+		background-color: var(--color-4);
+	}
+	.honeycomb_list li:nth-child(5n) .honeycomb_u3 {
+		background-color: var(--color-4);
+	}
 }

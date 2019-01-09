@@ -1,0 +1,108 @@
+:root {
+
+/*Highlight*/
+--highlight-dim: 300px;
+--highlights-spacing: 10px;
+
+}
+
+html {
+	padding: 5%;
+}
+
+.page_container  {
+		font-family: 'Raleway', sans-serif;
+}
+
+.highlights_container{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		border: orange 5px solid;
+	  overflow: hidden;
+		padding: 10px;
+		margin-top: 10px;
+}
+
+.highlight {
+      width: var(--highlight-dim);
+      height: var(--highlight-dim);
+      border-radius: 50%;
+			overflow:hidden;
+			background-color: red;
+					-webkit-transition: width 2s linear, height 2s linear;
+			   	-moz-transition: width 2s linear, height 2s linear;
+			    -o-transition: width 2s linear, height 2s linear;
+			    transition: width 2s linear, height 2s linear;
+}
+
+.highlight img{
+		width: 400px;
+		height: 400px;
+
+		-webkit-transition: width 2s linear, height 2s linear;
+   	-moz-transition: width 2s linear, height 2s linear;
+    -o-transition: width 2s linear, height 2s linear;
+    transition: width 2s linear, height 2s linear;
+}
+
+.highlight:hover img{
+	width: calc(var(--highlight-dim) +10);
+	height: calc(var(--highlight-dim) +10);
+	/* opacity: 0.5; */
+}
+
+.highlight:hover {
+	width: calc(var(--highlight-dim) -10);
+	height: calc(var(--highlight-dim) -10);
+	/* opacity: 0.5; */
+}
+
+.sd {
+		-webkit-transition: width 2s linear, height 2s linear;
+   	-moz-transition: width 2s linear, height 2s linear;
+    -o-transition: width 2s linear, height 2s linear;
+    transition: width 2s linear, height 2s linear;
+}
+/* .honeycomb_unit {
+		width: var(--honeycomb-dim);
+		border: 4px black solid;
+		margin: 10px;
+		background: red;
+		-webkit-transform: rotate(120deg);
+	      -ms-transform: rotate(120deg);
+	          transform: rotate(120deg);
+		overflow: hidden;
+		visibility: hidden;
+}
+
+.honeycomb_inside {
+		width: var(--honeycomb-dim);
+		height: var(--honeycomb-dim);;
+		/* width: var(--honeycomb-dim);
+		height: calc(var(--honeycomb-dim)/2); */
+		/* border: 4px black solid; */
+		/* margin: 10px; */
+		background: green;
+		-webkit-transform: rotate(-60deg);
+	      -ms-transform: rotate(-60deg);
+	          transform: rotate(-60deg);
+		overflow: hidden;
+		visibility: hidden;
+}
+
+.honeycomb_inside img {
+		width: var(--honeycomb-dim);;
+		height: var(--honeycomb-dim);;
+		/* width: var(--honeycomb-dim);
+		height: calc(var(--honeycomb-dim)/2); */
+		/* border: 4px black solid; */
+		/* margin: 10px; */
+		background: green;
+		-webkit-transform: rotate(-60deg);
+	      -ms-transform: rotate(-60deg);
+	          transform: rotate(-60deg);
+		visibility:visible;
+		cursor: pointer;
+		z-index: 345;
+} */

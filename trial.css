@@ -1,0 +1,192 @@
+:root{
+/* Colors */
+  --color-1: #430D23;
+	--color-2: #F3CDAF;
+	--color-3: #DA9602;
+	--color-4: #CD7111;
+	--color-5: #7C2D4C;
+	--color-6: #DCA80A;
+	--color-7: #EADD64;
+	--color-8: #441227;
+	--color-9: #EDC7B2;
+	--color-10: #7E344F;
+	--color-11: #CFA5A1;
+	--color-12: #B96A3A;
+	--color-13: #782F4E;
+	--color-14: #461026;
+	--color-15: #DA9502;
+
+	/*Honeycomb*/
+	--honeycomb-unit-width: 300px;
+	--honeycomb-unit-spacing: 10px;
+
+}
+
+html {
+		padding: 5%;
+}
+
+.page_container  {
+		font-family: 'Raleway', sans-serif;
+}
+
+.honeycomb_container{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: left;
+		border: green 5px solid;
+	  overflow: hidden;
+	  list-style-type: none;
+		margin: 0 auto;
+}
+
+#hexGrid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  list-style-type: none;
+}
+
+.honeycomb_unit{
+  background-color: var(--color-hex-default);
+	align-content: center;
+  cursor: pointer;
+	border: orange 2px solid;
+  height: var(--honeycomb-unit-width);
+  width: var(--honeycomb-unit-width);
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+  visibility:visible;
+  outline:1px solid transparent;
+
+
+}
+.honeycomb_u1{
+	border: yellow 2px solid;
+  height: var(--honeycomb-unit-width);
+  width: var(--honeycomb-unit-width);
+  -webkit-transform: rotate3d(0,0,1,45deg) skewY(0deg);
+      -ms-transform: rotate3d(0,0,1,45deg) skewY(0deg);
+          transform: rotate3d(0,0,1,45deg) skewY(0deg);
+	z-index: 400;
+position: absolute;
+/* width:96%; */
+padding-bottom: 110.851%; /* =  width / sin(60) */
+margin:0 2%;
+overflow: hidden;
+visibility: hidden;
+-webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+		-ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+				transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+
+}
+
+.honeycomb_u1 * {
+  position: absolute;
+  visibility: visible;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+.honeycomb_u2 {
+    display:block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+
+}
+
+.honeycomb_unit::after{
+	content:'';
+  display:block;
+  padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
+}
+
+
+.honeycomb_unit img {
+  left: -100%;
+  right: -100%;
+  width: inherit;
+  margin: 0 auto;
+  -webkit-transform: rotate3d(0,0,0,0deg);
+      -ms-transform: rotate3d(0,0,0,0deg);
+          transform: rotate3d(0,0,0,0deg);
+}
+
+
+
+
+.hex {
+  position: relative;
+  visibility:visible;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover
+ transition */
+}
+.hex::after{
+	content:'';
+  display:block;
+  padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
+}
+.hexIn{
+  position: absolute;
+  width:96%;
+  padding-bottom: 110.851%; /* =  width / sin(60) */
+  margin:0 2%;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+      -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+          transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+}
+.hexIn * {
+  position: absolute;
+  visibility: visible;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+.hexLink {
+    display:block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+
+}
+
+/*** HEX CONTENT **********************************************************************/
+.hex img {
+  left: -100%;
+  right: -100%;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-transform: rotate3d(0,0,0,0deg);
+      -ms-transform: rotate3d(0,0,0,0deg);
+          transform: rotate3d(0,0,0,0deg);
+}
+
+
+
+
+@media (min-width:1201px) { /* <- 5-4  hexagons per row */
+  #hexGrid{
+    padding-bottom: 4.4%
+  }
+  .hex {
+    width: 20%; /* = 100 / 5 */
+  }
+  .hex:nth-child(9n+6){ /* first hexagon of even rows */
+    margin-left:10%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
