@@ -32,7 +32,21 @@
 
 		<body onload="fadein()" onscroll="whitenNavBar()" id="body">
 <script>document.body.className += 'loading';</script>
-		<?php include 'header_index.php';?>
+		<!-- <?php include 'header_index.php';?> -->
+<div class="navbar" id="index_navbar">
+		<div class="navbar_logo">
+			<a href="index.html"><img src="asset/logowhite.png" id="navlogo" draggable="false"></a>
+		</div>
+		<div class="navbar_menu">
+			<ul>
+					<li><a href="about.html"><div class="nav_opt" id="about" onclick="fadeout()"><h2 style="font-size: 20px; padding: 0; margin: 0; font-weight: lighter;">About</h2></div></a></li>
+
+					<li><a href="flipside.html"><div class="nav_opt" id="work" style=""><h2 style="font-size: 20px; padding: 0; margin: 0; font-weight: lighter;transform:rotate(180deg);">B-Side</h2></div></a></li>
+			</ul>
+		</div>
+</div>
+
+
 <div class="dia" onscroll="scrollNotif()"  id="dia">
 		<div class="scrollpos" id="scr"></div><div class="scrollpos" id="scr"></div>
 				<h1 id="h1" style="color: black;"></h1>
@@ -126,6 +140,28 @@
 		</div>
 
 
-		<?php include 'footer.php';?>
+		<!-- <?php include 'footer.php';?> -->
+<div class="footer_container">
+			<table style="width: 100%; ">
+
+<tr>
+	<td colspan="1" style="font-size: 15px;text-align:left; width: 40%; ">
+		<p>&copy 2019 Srishti Belwariar.  All rights reserved.</p>
+	</td>
+	<td>
+<div style="text-align:right;font-size: 40px; ">
+<a href="https://www.linkedin.com/in/srishtibelwariar/"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://github.com/srishtibelwariar"><i class="fab fa-github" ></i></a>
+<a href="mailto:sbelwariar@yahoo.com"><i class="fas fa-envelope"></i></a>
+
+
+</div>
+
+</td>
+</tr>
+
+</table>
+
+</div>
 		</body>
 </html>
