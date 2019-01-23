@@ -1,0 +1,135 @@
+:root {
+
+/*Color Scheme*/
+	--color-0: #000000;
+  --color-1: #430D23;
+	--color-2: #F3CDAF;
+	--color-3: #DA9602;
+	--color-4: #CD7111;
+	--color-5: #7C2D4C;
+
+	--color-11: #CFA5A1;
+	--color-12: #B96A3A;
+	--color-13: #782F4E;
+	--color-14: #461026;
+	--color-15: #DA9502;
+
+	--color-year: #FF6F61;
+	--color-year-1: #9D446E;
+	--color-year-2: #FC9E21;
+	--color-year-3: #DC793E;
+	--color-year-4: #FEA166;
+
+	--ball-speed: 1.5s;
+}
+
+
+
+/* Page Style */
+html {
+	text-rendering: optimizeLegibility;
+
+}
+
+body {
+	padding: 0px;
+	margin: 0;
+	font-family: 'Cardo', serif;
+color:black;
+opacity: 1;
+transition: 1s opacity ease-in-out;
+
+
+}
+
+body.loading{
+opacity: 0;
+}
+
+.page_container.loading{opacity: 0;}
+.page_container  {
+		padding: 5%;
+		align-content: center;
+		opacity: 1;
+transition: 1s opacity ease-in-out;
+}
+
+.hideme {opacity: 1.0; width: inherit;}
+
+h1{font-family: 'Cardo', serif; font-family: 'Oswald', sans-serif; text-transform: uppercase; color: white}
+h4 {color: white;}
+h5 {font-family: 'Raleway', sans-serif; }
+p{line-height:30px;font-family: 'Raleway', sans-serif; font-size: 18px;}
+
+a {text-decoration: none; color: inherit;}
+
+/* Header */
+.header_container {
+/* background: linear-gradient(240deg, var(--color-year-4) 5%, var(--color-year) 51%, var(--color-year-1) 85%); */
+/* background: linear-gradient(180deg,#ff6261 5%, var(--color-year) 15%, #ff8a80 45%,  #ffb9b3 80%, #ffe8e6 97%)); */
+background: linear-gradient(180deg, #da9502 10%, #fcbd36 45%,  #fdce68 80%, #fede9a 95%);
+/* background: linear-gradient(180deg,#ff4948 2%, #ff6261 15%, var(--color-year) 35%, #ff8a80 55%,  #ffb9b3 90%); */
+
+	/* padding:  5%; */
+	height: 90vh;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+position: relative;
+	z-index: 0;
+}
+
+.header_blurb {
+		position: relative;
+		top: -65vh;
+		/* font-family: 'Prata', serif; */
+		color: white;
+		font-size: 40px;
+		z-index: 100;
+	/* border: red solid 3px; */
+}
+
+.header_animations {
+		/* border: green solid 2px; */
+		position: absolute;
+		z-index: 10;
+		height: 100%;
+		width: 100%;
+		top: 0vh;
+}
+
+.header_container h2 {
+	/* font-family: 'Open Sans', sans-serif; */
+	color: var(--color-year-1);
+	font-size: 40px;
+	overflow:scroll;
+}
+
+.header_container p {
+	font-family: 'Khula', sans-serif;
+	color: var(--color-0);
+	font-size: 20px;
+}
+
+/* Footer */
+.footer_container {
+	background-color: #f2f2f2;
+	padding: 3%;
+
+}
+.footer_container h1{
+	color: black;
+}
+
+i {
+padding-right: 15px;
+color: #bfbfbf;
+		-webkit-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+		-moz-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+		-o-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+		transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+i:hover{
+color: black;
+}

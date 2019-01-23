@@ -1,0 +1,91 @@
+/*Nav Bar*/
+.navbar {
+	width: 90%;
+	height: 50px;
+	position: fixed;
+	z-index: 1000;
+	padding-left: 5%;
+padding-right: 5%;
+	padding-top: 0.1%;
+	padding-bottom: 0.1%;
+	display: flex;
+	align-self: center;
+	background-color: transparent;
+	color: white;
+	-webkit-transition: background-color 0.5s linear, color 0.5s linear;
+	-moz-transition:  background-color 0.5s linear, color 0.5s linear;
+	-o-transition:  background-color 0.5s linear, color 0.5s linear;
+	transition:  background-color 0.5s linear, color 0.5s linear;
+}
+
+.navbar.outhead{
+	background: rgba(255,255,255,1);
+	color:black;
+	-webkit-transition: background-color 0.5s linear, color 0.5s linear;
+	-moz-transition:  background-color 0.5s linear, color 0.5s linear;
+	-o-transition:  background-color 0.5s linear, color 0.5s linear;
+	transition:  background-color 0.5s linear, color 0.5s linear;
+}
+
+.navbar_logo {
+	width: 50%;
+	display: flex;
+	align-content: space-around;
+}
+
+.navbar_logo img{
+	height: 100%;
+	width: 100px;
+}
+
+.navbar_menu {
+	width: 50%;
+	display: flex;
+	overflow: auto;
+
+}
+
+.navbar h1 {
+	display: flex;
+	align-self: center;
+}
+
+.navbar ul {
+	list-style: none;
+	display: flex;
+	align-self: center;
+	font-size: 20px;
+  justify-content: space-around;
+  margin: 0;
+	width: 100%;
+}
+
+.navbar li {
+width: inherit;
+text-align: center;
+
+}
+
+.navbar .nav_opt {
+display: inline-block;
+width: 70%;
+margin: auto;
+border-bottom: transparent 2px solid;
+padding: 5px;
+-webkit-transition: border-bottom 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+-moz-transition:  border-bottom 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+-o-transition:  border-bottom 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+transition: border-bottom 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.navbar .nav_opt:hover {
+cursor:pointer;
+border-bottom: white 2px solid;
+padding: 5px;
+}
+
+.navbar.outhead .nav_opt:hover {
+cursor:pointer;
+border-bottom: var(--color-3) 2px solid;
+padding: 5px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<!-- Metadata -->
+				<meta charset="UTF-8" />
+				<meta http-equiv="x-ua-compatible" content="ie=edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+
+				<title>Srishti Belwariar</title>
+				<!-- <link rel="icon" href="images/favicon.png"> -->
+
+				<!-- Style -->
+				<link rel="stylesheet" href="style/main.css">
+				<link rel="stylesheet" href="style/honeycomb.css">
+				<link rel="stylesheet" href="style/navigationbar_index.css">
+				<link rel="stylesheet" href="style/prod.css">
+<link href="https://fonts.googleapis.com/css?family=Cardo|Oswald|Raleway:300" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+			<!-- Scripts -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="script/scroll.js"></script>
+			<script src="script/fadein.js"></script>
+			<script src="script/banner.js"></script>
+			<script src="script/honeycomb.js"></script>
+			<script src="temp.js"></script>
+				<!-- Other Header Stuff -->
+		</head>
+
+
+		<body onload="fadein()" onscroll="whitenNavBar()" id="body">
+<script>document.body.className += 'loading';</script>
+		<?php include 'header_index.php';?>
+<div class="dia" onscroll="scrollNotif()"  id="dia">
+		<div class="scrollpos" id="scr"></div><div class="scrollpos" id="scr"></div>
+				<h1 id="h1" style="color: black;"></h1>
+				<h3 id="h3" style="color: black;"></h3>
+				<p id="p"></p>
+
+				<br />
+				<p id="p_2"></p>
+
+		</div>
+<div class="diacover" id="diacover" onclick="closeDia()"></div>
+
+<div class="page_container" style="padding: 0; z-index: 5000" id="bod">
+		<div class="header_container" id="header_container">
+			<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" style="border-top: 1px solid transparent;margin: 0; padding: 0; ">
+				<polygon fill="white"  points="100 80, 100 100,  0 100"/ >
+			</svg>
+
+			<div class="header_animations" id="animation_panel" >
+				<!-- <canvas id="mycanvas" width="100" height="100" style="border: green 2px solid; transform: rotate(-6deg) translate(-10%);"></canvas> -->
+<!-- <p id="velocity">0</p><p id="maxv">4</p> -->
+			</div>
+
+				<div class="header_blurb" >
+					<h1>Srishti Belwariar</h1>
+					<h4>An Everything 'folio.</h4>
+				</div>
+<div class="v"></div>
+		</div>
+<br /><br />
+				<div style="width: 75%; line-height: 50px; float:left; text-align:left; padding: 40px;">
+							<h5 style="font-size: 30px;">Hello!  I'm Srishti and I'm a junior at Cornell University, majoring in Information Science, Systems, and Technology.  I enjoy taking on many roles and wearing many hats throughout all my projects and initiatives, whether they be technical projects or community initiatives.</h5>
+				</div>
+				<table class="highlights" >
+						<tr style="height:50vh">
+								<td width="50%"  style="overflow: hidden;text-align: center; margin: 5%; border-radius: 1%;">
+									<div onclick="openDia(this.id)" id="web" class="con" style="background: rgb(226,226,226);">
+										<img class="coverpic" src="asset/mock.png" >
+										<div class="shroud"></div>
+										<div class="contents">
+												<h2>New Year, New Me, New Website</h2>
+												<h3>Redesigning my online website and brand</h3>
+										</div>
+									</div>
+								</td>
+								<td width="50%"  style="overflow: hidden;text-align: center; margin: 5%; border-radius: 1%;">
+									<div onclick="openDia(this.id)" id="ms" class="con" style="background: rgb(87,83,82);">
+										<img class="coverpic" src="asset/ms.png" >
+										<div class="shroud"></div>
+										<div class="contents">
+												<h2>Microsoft Summer 2018</h2>
+												<h3>Explore Internship in Azure</h3>
+												<h3>Post Coming Soon!</h3>
+										</div>
+									</div>
+								</td>
+
+						</tr>
+						<tr style="height:50vh">
+							<td width="50%"  style="overflow: hidden;text-align: center; margin: 5%; border-radius: 1%;">
+								<div onclick="openDia(this.id)" id="ski" class="con" style="background: rgb(87,83,82);">
+									<img class="coverpic" src="asset/skills.png" >
+									<div class="shroud"></div>
+									<div class="contents">
+											<h2>Amazon Alexa Skills</h2>
+											<h3>Area Calculator and Dice Roller</h3>
+
+									</div>
+								</div>
+							</td>
+							<td width="50%"  style="overflow: hidden;text-align: center; margin: 5%; border-radius: 1%;">
+								<div onclick="openDia(this.id)" id="blo" class="con" style="background: rgb(226,226,226);">
+									<img class="coverpic" src="asset/ocamlmock.png" >
+									<div class="shroud"></div>
+									<div class="contents">
+											<h2>bLoKaML</h2>
+											<h3>CS 3110 Final Group Project</h3>
+												<h3>Post Coming Soon!</h3>
+									</div>
+								</div>
+							</td>
+						</tr>
+				</table>
+<h5 style="line-height: 40px;font-size: 25px; text-align:center;">Hey there!  Let's chat! Feel free to drop me a line and check out my work!</h5>
+<div style="text-align:center;font-size: 50px; ">
+	<a href="https://www.linkedin.com/in/srishtibelwariar/"><i class="fab fa-linkedin-in"></i></a>
+	<a href="https://github.com/srishtibelwariar"><i class="fab fa-github" ></i></a>
+	<a href="mailto:sbelwariar@yahoo.com"><i class="fas fa-envelope"></i></a>
+</div>
+<br />
+		</div>
+
+
+		<?php include 'footer.php';?>
+		</body>
+</html>

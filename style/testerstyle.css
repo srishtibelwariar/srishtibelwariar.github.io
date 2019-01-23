@@ -1,0 +1,38 @@
+.version{
+width:80vw;
+/* height:80vh; */
+border: 3px red solid;
+background-color: white;
+position: fixed;
+top: 20vh;
+left: 10vw;
+z-index:100000;
+visibility: hidden;
+overflow-y: scroll;
+transition: all 0.2 linear;
+}
+
+.freeze {
+overflow:hidden;
+}
+
+.screen {
+	width:100vw;
+	height: 100vw;
+	position: fixed;
+	z-index: -100000;
+	opacity: 0;
+	transition: all 0.2s linear;
+	/* overflow-y: scroll; */
+}
+
+.screen.cover {
+	background-color: gray;
+	opacity: 0.99;
+	z-index: 100000;
+	transition: all 0.2s linear;
+}
+
+.visible_desc{
+visibility:visible;
+}
