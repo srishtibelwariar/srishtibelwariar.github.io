@@ -59,7 +59,8 @@ function printout(id) {
 	document.getElementById("h1").innerHTML="bLoKaML: the OCaml take on Blokus";
 	document.getElementById("h3").innerHTML="CS3110 Final Group Project";
 	document.getElementById("p").innerHTML=
-			"Stay Tuned!"
+			"Stay Tuned!";
+document.getElementById("p_2").innerHTML= "";
 	}
 
 }
