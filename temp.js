@@ -22,12 +22,12 @@ function lightenDiacover() {
 	// document.getElementById('diacover').style.opacity="0.85";
 }
 
-function scrollNotif() {
-  var pos = document.getElementById('dia').scrollTop;
-	var height= document.getElementById('dia').scrollHeight-document.getElementById('dia').clientHeight;
-	var x= (pos/height)*100;
-	document.getElementById('scr').style.width= x+"%";
-}
+// function scrollNotif() {
+//   var pos = document.getElementById('dia').scrollTop;
+// 	var height= document.getElementById('dia').scrollHeight-document.getElementById('dia').clientHeight;
+// 	var x= (pos/height)*100;
+// 	document.getElementById('scr').style.width= x+"%";
+// }
 
 function printout(id) {
 	var board= document.getElementById('dia');

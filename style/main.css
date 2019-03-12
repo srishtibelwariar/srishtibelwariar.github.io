@@ -42,7 +42,7 @@ transition: 1s opacity ease-in-out;
 
 }
 
-body.loading{
+body.intro.loading{
 opacity: 0;
 }
 

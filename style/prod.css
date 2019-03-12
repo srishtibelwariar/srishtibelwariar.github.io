@@ -102,18 +102,19 @@ transition: all 0.1s linear;
 
 .dia {
 position: fixed;
+padding-left: 5%;
+padding-right: 5%;
+right: 5%;
 background: white;
 opacity: 1;
 z-index: 500000;
-width: 60vw;
+width: 80vw;
 height: 100vh;
-margin-left: 20vw;
-/* padding-left: 5vw;
-padding-right: 5vw; */
 overflow-y: scroll;
 visibility: hidden;
 color: black;
 }
+
 
 .diacover:hover  {
 opacity: 0.85;
