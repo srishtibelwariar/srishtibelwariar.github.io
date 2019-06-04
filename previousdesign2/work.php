@@ -7,7 +7,6 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1">
 
 				<title>Srishti Belwariar</title>
-				<!-- <link rel="icon" href="images/favicon.png"> -->
 
 				<!-- Style -->
 				<link rel="stylesheet" href="style/main.css">

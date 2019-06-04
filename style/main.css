@@ -26,10 +26,10 @@
 
 
 /* Page Style */
-html {
+/* html {
 	text-rendering: optimizeLegibility;
 
-}
+} */
 
 body {
 	padding: 0px;
@@ -56,7 +56,7 @@ transition: 1s opacity ease-in-out;
 
 .hideme {opacity: 1.0; width: inherit;}
 
-h1{font-family: 'Cardo', serif; font-family: 'Oswald', sans-serif; text-transform: uppercase; color: white}
+h1{font-family: 'Cardo', serif; font-family: 'Oswald', sans-serif; text-transform: uppercase; color: white; font-size: 10vw;}
 h4 {color: white;}
 h5 {font-family: 'Raleway', sans-serif; }
 p{line-height:30px;font-family: 'Raleway', sans-serif; font-size: 18px;}
@@ -82,7 +82,7 @@ position: relative;
 
 .header_blurb {
 		position: relative;
-		top: -65vh;
+		top: -75vh;
 		/* font-family: 'Prata', serif; */
 		color: white;
 		font-size: 40px;

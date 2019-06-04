@@ -1,8 +1,7 @@
 function fadein() {
-	document.getElementsByTagName("BODY")[0].classList.remove ("loading");
+	document.getElementsByTagName("BODY")[0].classList.remove("loading");
 }
 
-// function fadeout() {
-// 	document.
-// 	document.getElementsByTagName("BODY")[0].classList.add("loading");
-// }
+function fadeout() {
+	document.getElementsByTagName("BODY")[0].classList.add("loading");
+}

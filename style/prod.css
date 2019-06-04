@@ -81,7 +81,7 @@ transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 
 .v {
   border-left: 2px solid gray;
-  height: 30vh;
+  height: 25vh;
   position: absolute;
   left: 50%;
   margin-left: -3px;
@@ -97,7 +97,7 @@ width: 100vw;
 height: 100vh;
 visibility: hidden;
 top: 0vh;
-transition: all 0.1s linear;
+transition: all 0.4s linear;
 }
 
 .dia {
