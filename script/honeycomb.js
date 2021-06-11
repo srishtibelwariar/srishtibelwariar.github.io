@@ -1,3 +1,0 @@
-// function openDesc(id){
-//
-// }
